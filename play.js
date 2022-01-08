@@ -30,6 +30,7 @@ let totalCoin;
 let jumpSong;
 let coinSong;
 let lostSong;
+let params;
 
 function preload() {
   video = createCapture(VIDEO);
@@ -42,6 +43,9 @@ function preload() {
   //lostSong = loadSound('lost.mp3');
   //dinoImg = loadImage('rabbit_game-removebg-preview.png'); 
   let charImgLoad = sessionStorage.getItem("character");
+  params = getURLParams();
+  console.log(params.name);
+  bg_idea = params.name;
   if (charImgLoad == "pig") {
     console.log('pig pog pig')
     dinoImg = loadImage('rabbit_game-removebg-preview.png');
@@ -79,7 +83,7 @@ function preload() {
   } else if (charImgLoad == "chicken") {
     dinoImg = loadImage('char_eleven.png');
     bg_idea = loadImage("bg_idea12.jpg");
-  }
+  } 
 }
 
 function setup() {
