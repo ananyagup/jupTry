@@ -46,6 +46,7 @@ function preload() {
   params = getURLParams();
   console.log(params.name);
   bg_idea = params.name;
+  dinoImg = loadImage('rabbit_game-removebg-preview.png');
   if (charImgLoad == "pig") {
     console.log('pig pog pig')
     dinoImg = loadImage('rabbit_game-removebg-preview.png');
