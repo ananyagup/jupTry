@@ -23,6 +23,7 @@ let coinsClash;
 let coinCount;
 let newPostKey;
 let bg_idea;
+let dinoImg;
 var x1 = 0;
 var x2;
 var scrollSpeed = 6;
