@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico?" />
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      .charContainer {
+        float: left;
+        width: 25%;
+        padding: 5px;
+      }
+
+      /* Clearfix (clear floats) */
+      .column::after {
+        content: "";
+        clear: both;
+        display: table;
+      }
+
+      html, body {
+        margin: 0;
+        padding: 0;
+        overflow: scroll;
+      }
+
+      canvas {
+        display: block;
+      }
+
+
+      .charContainer img {
+        width: 100%;
+      }
+      
+      .character {
+        max-width:1100px;
+        max-height: 1100px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 80px;
+        /* border: 3px solid green; */
+      }
+      
+    </style>
+    <script src="https://www.gstatic.com/firebasejs/8.4.1/firebase.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/8.4.1/firebase.min.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.4.1/firebase-database.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.2.0/p5.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.2.0/addons/p5.sound.min.js"></script>
+    <meta charset="utf-8" />
+  </head>
+  <body>
+    <script src="home.js"></script>
+
+    <div id="characterDIV" class="character">
+      <div class="column">
+        <div class="charContainer">
+          <img
+            id="pig_img"
+            onload="statusCheck('pig')"
+            onclick="charClick('pig')"
+            src="rabbit_start.jpg"
+          />
+          <!-- <button id="pig_btn" onclick="addChar('pig')" style="visibility:hidden;width:0.1px;height:0.1px"></button> -->
+        </div>
+        <div class="charContainer">
+          <img
+            id="octopus_img"
+            onload="statusCheck('octopus')"
+            onclick="charClick('octopus')"
+            src="octopus_init.jpg"
+          />
+          <!-- <button id="octopus_btn" onclick="addChar('octopus')" class= "btn">Buy</button> -->
+        </div>
+        <div class="charContainer">
+          <img
+            id="fox_img"
+            onload="statusCheck('fox')"
+            onclick="charClick('fox')"
+            src="fox_init.jpg"
+          />
+          <!-- <button id="fox_btn" onclick="addChar('fox')" class= "btn">Buy</button> -->
+        </div>
+        <div class="charContainer">
+          <img
+            id="ghost_img"
+            onload="statusCheck('ghost')"
+            onclick="charClick('ghost')"
+            src="ghost_init.jpg"
+          />
+          <!-- <button id="ghost_btn" onclick="addChar('ghost')" class= "btn">Buy</button> -->
+        </div>
+      </div>
+      <div class="column">
+        <div class="charContainer">
+          <img
+            id="duck_img"
+            onload="statusCheck('duck')"
+            onclick="charClick('duck')"
+            src="duck_init.jpg"
+          />
+          <!-- <button id="duck_btn" onclick="addChar('duck')" class= "btn">Buy</button> -->
+        </div>
+        <div class="charContainer">
+          <img
+            id="whale_img"
+            onload="statusCheck('whale')"
+            onclick="charClick('whale')"
+            src="whale_init.jpg"
+          />
+          <!-- <button id="whale_btn" onclick="addChar('whale')" class= "btn">Buy</button> -->
+        </div>
+        <div class="charContainer">
+          <img
+            id="unicorn_img"
+            onload="statusCheck('unicorn')"
+            onclick="charClick('unicorn')"
+            src="unicorn_init.jpg"
+          />
+          <!-- <button id="unicorn_btn" onclick="addChar('unicorn')" class= "btn">Buy</button> -->
+        </div>
+        <div class="charContainer">
+          <img
+            id="pusheen_img"
+            onload="statusCheck('pusheen')"
+            onclick="charClick('pusheen')"
+            src="pusheen_init.jpg"
+          />
+          <!-- <button id="pusheen_btn" onclick="addChar('pusheen')" class= "btn">Buy</button> -->
+        </div>
+      </div>
+      <div class="column">
+        <div class="charContainer">
+          <img
+            id="owl_img"
+            onload="statusCheck('owl')"
+            onclick="charClick('owl')"
+            src="owl_init.jpg"
+          />
+          <!-- <button id="owl_btn" onclick="addChar('owl')" class= "btn">Buy</button> -->
+        </div>
+        <div class="charContainer">
+          <img
+            id="chicken_img"
+            onload="statusCheck('chicken')"
+            onclick="charClick('chicken')"
+            src="chicken_init.jpg"
+          />
+          <!-- <button id="chicken_btn" onclick="addChar('chicken')" class= "btn">Buy</button> -->
+        </div>
+        <div class="charContainer">
+          <img
+            id="elephant_img"
+            onload="statusCheck('elephant')"
+            onclick="charClick('elephant')"
+            src="elephant_init.jpg"
+          />
+          <!-- <button id="elephant_btn" onclick="addChar('elephant')" class= "btn">Buy</button> -->
+        </div>
+        <div class="charContainer">
+          <img
+            id="corgi_img"
+            onload="statusCheck('corgi')"
+            onclick="charClick('corgi')"
+            src="corgi_init.jpg"
+          />
+          <!-- <button id="corgi_btn" onclick="addChar('corgi')" class= "btn">Buy</button> -->
+        </div>
+      </div>
+    </div>
+    <div>
+      <a href="learn.html"><img src="learn_button.png" alt="Learn how to play" style="max-width:100%;height:auto;position:fixed;left:82%;top:0.1%;z-index:1"></a>
+    </div>
+  </body>
+</html>

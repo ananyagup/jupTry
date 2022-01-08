@@ -1,0 +1,129 @@
+html, body {
+  margin: 0;
+  padding: 0;
+}
+canvas {
+  display: block;
+  position: absolute;
+  top:500px;
+  bottom: 0;  
+  left: 500px;
+  right: 0;
+  margin:auto;
+  z-index: -1;
+  margin-left: 39%;
+  margin-right: auto;
+  margin-top: 25%;
+  width: 50%;
+  padding: 10px;
+}
+
+.character {
+  margin-left: 43%;
+  margin-right: auto;
+  margin-top: 5%;
+  width: 50%;
+  padding: 10px;
+}
+
+
+.charContainer {
+  position: relative;
+  width: 50%;
+}
+whu isnt the code working in terms of this 
+.container .pig {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color: #555;
+  color: white;
+  font-size: 16px;
+  padding: 12px 24px;
+  border-radius: 5px;
+}
+
+.container .pig:hover {
+  background-color: black;
+}
+
+.container .bear {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color: #555;
+  color: white;
+  font-size: 16px;
+  padding: 12px 24px;
+  border-radius: 5px;
+}
+
+.container .bear:hover {
+  background-color: black;
+}
+
+.container .cat {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color: #555;
+  color: white;
+  font-size: 16px;
+  padding: 12px 24px;
+  border-radius: 5px;
+}
+
+.container .cat:hover {
+  background-or: black;
+}
+
+.enterUser {
+  margin-left: 43%;
+  margin-right: auto;
+  margin-top: 5%;
+  width: 50%;
+  padding: 10px;
+}
+
+.restart {
+  margin-left: 39%;
+  margin-right: auto;
+  margin-top: 25%;
+  width: 50%;
+  padding: 10px;
+}
+
+.restart .resBut {
+  font-size: 16px;
+  padding: 12px 24px;
+  border-radius: 5px;
+  z-index: 1;
+  background-color: black;
+  color: white;
+  height: 60px;
+  width: 150px;
+}
+
+.restart .resBut:hover {
+  background-color: white;
+  color: black;
+}
+
+.restart .home {
+  font-size: 16px;
+  padding: 12px 24px;
+  border-radius: 5px;
+  z-index: 1;
+  background-color: black;
+  color: white;
+  height: 60px;
+  width: 150px;
+}
+
+.restart .home:hover {
+  background-color: white;
+  color: black;
+}

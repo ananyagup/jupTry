@@ -1,0 +1,47 @@
+html, body {
+  margin: 0;
+  padding: 0;
+}
+canvas {
+  display: block;
+}
+
+.restart {
+  margin-left: 39%;
+  margin-right: auto;
+  margin-top: 25%;
+  width: 50%;
+  padding: 10px;
+}
+
+.restart .resBut {
+  font-size: 16px;
+  padding: 12px 24px;
+  border-radius: 5px;
+  z-index: 1;
+  background-color: black;
+  color: white;
+  height: 60px;
+  width: 150px;
+}
+
+.restart .resBut:hover {
+  background-color: white;
+  color: black;
+}
+
+.restart .home {
+  font-size: 16px;
+  padding: 12px 24px;
+  border-radius: 5px;
+  z-index: 1;
+  background-color: black;
+  color: white;
+  height: 60px;
+  width: 150px;
+}
+
+.restart .home:hover {
+  background-color: white;
+  color: black;
+}
