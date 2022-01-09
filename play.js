@@ -9,7 +9,7 @@ let poseNet;
 let pose;
 let backCol;
 let charName;
-let col;
+let col = '#DCDCDC';
 let pageCol;
 let mode = false;
 var resBut = document.getElementById("resetDIV");
