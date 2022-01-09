@@ -48,6 +48,7 @@ function preload() {
   console.log(params.name);
   
   bg_idea = createImg(params.name);
+  bg_idea.size(0,0);
   dinoImg = loadImage('rabbit_game-removebg-preview.png');
   if (charImgLoad == "pig") {
     console.log('pig pog pig')
